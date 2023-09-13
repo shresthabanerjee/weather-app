@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeather.com</title>
+    
+    
+    <script src="https://kit.fontawesome.com/c6a9e74537.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+    <div class="container">
+        
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your Location" class="input-box">
+            </div>
+            <button class="fa-solid fa-magnifying-glass" id="searchbtn"></button>
+        </div>
+        <div class="error">
+            <h1>LOCATION NOT FOUND</h1>
+            <img src="404.png" alt="" class="imageerr">
+           </div>
+        <div class="weather-body">
+            
+            <img src="clear.png" alt="" class="image">
+
+            <div class="weather-box">
+                <p class="temperature">--<sup> °C</sup></p>
+                <p class="description">---</p>
+                
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">--%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">--km/hr</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</body>
+
+</html>
